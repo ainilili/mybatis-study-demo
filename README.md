@@ -1,2 +1,2 @@
 # mybatis-study-demo
-a demo to study mybatis
+ - study follow [http://www.mybatis.org/mybatis-3/zh/getting-started.html](http://www.mybatis.org/mybatis-3/zh/getting-started.html)
