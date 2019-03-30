@@ -10,6 +10,7 @@ import org.smallnico.mybatis.builder.SessionFactoryXMLBuilder;
 
 public class BaseTests {
 
+//    protected AbstractSessionFactoryBuilder sessionFactoryBuilder = new SessionFactoryCodeBuilder();
     protected AbstractSessionFactoryBuilder sessionFactoryBuilder = new SessionFactoryXMLBuilder();
 
     protected SqlSession getSqlSession() throws Exception {
