@@ -7,14 +7,14 @@
     <environment id="development">
       <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
-        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;transformedBitIsBoolean=true&amp;zeroDateTimeBehavior=CONVERT_TO_NULL&amp;serverTimezone=Asia/Shanghai"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="driver" value="org.h2.Driver"/>
+        <property name="url" value="jdbc:h2:mem:testdb;MODE=MYSQL;DB_CLOSE_DELAY=-1"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
       </dataSource>
     </environment>
   </environments>
   <mappers>
-    <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+    <mapper resource="mybatis-mappers/BlogMapper.xml"/>
   </mappers>
 </configuration>
