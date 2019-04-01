@@ -6,12 +6,12 @@ import java.sql.Statement;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Before;
 import org.smallnico.mybatis.builder.AbstractSessionFactoryBuilder;
-import org.smallnico.mybatis.builder.SessionFactoryXMLBuilder;
+import org.smallnico.mybatis.builder.SessionFactoryCodeBuilder;
 
 public class BaseTests {
 
-//    protected AbstractSessionFactoryBuilder sessionFactoryBuilder = new SessionFactoryCodeBuilder();
-    protected AbstractSessionFactoryBuilder sessionFactoryBuilder = new SessionFactoryXMLBuilder();
+    protected AbstractSessionFactoryBuilder sessionFactoryBuilder = new SessionFactoryCodeBuilder();
+//    protected AbstractSessionFactoryBuilder sessionFactoryBuilder = new SessionFactoryXMLBuilder();
 
     protected SqlSession getSqlSession() throws Exception {
         return sessionFactoryBuilder.builder().openSession();
